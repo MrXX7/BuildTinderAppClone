@@ -11,6 +11,8 @@
 		AD95018D28649BD7004F7836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95018C28649BD7004F7836 /* ContentView.swift */; };
 		AD95018F28649BD8004F7836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD95018E28649BD8004F7836 /* Assets.xcassets */; };
 		AD95019228649BD8004F7836 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD95019128649BD8004F7836 /* Preview Assets.xcassets */; };
+		AD95019B28649ECC004F7836 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95019A28649ECC004F7836 /* MainView.swift */; };
+		AD95019D2864A047004F7836 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95019C2864A047004F7836 /* TabBarButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AD95018C28649BD7004F7836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD95018E28649BD8004F7836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD95019128649BD8004F7836 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD95019A28649ECC004F7836 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AD95019C2864A047004F7836 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */,
+				AD95019A28649ECC004F7836 /* MainView.swift */,
+				AD95019C2864A047004F7836 /* TabBarButtonView.swift */,
 				AD95018C28649BD7004F7836 /* ContentView.swift */,
 				AD95018E28649BD8004F7836 /* Assets.xcassets */,
 				AD95019028649BD8004F7836 /* Preview Content */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD95019D2864A047004F7836 /* TabBarButtonView.swift in Sources */,
 				AD95018D28649BD7004F7836 /* ContentView.swift in Sources */,
+				AD95019B28649ECC004F7836 /* MainView.swift in Sources */,
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
