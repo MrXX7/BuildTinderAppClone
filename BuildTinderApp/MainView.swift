@@ -11,6 +11,19 @@ struct MainView: View {
     
     @EnvironmentObject var appState: AppStateManager
     
+    func correctViewForState() -> some View {
+        switch appState.selectedTab {
+        case .fire:
+          return Text("Fire")
+        case .star:
+          return Text("Star")
+        case .profile:
+           return Text("Profile")
+        case .message:
+           return Text("Message")
+        }
+    }
+    
     var body: some View {
         ZStack {
             Color(.systemGray6)
@@ -30,6 +43,7 @@ struct MainView: View {
                     Spacer()
                 }
                 .frame(height: 100)
+                correctViewForState()
                 
                 Spacer()
             }

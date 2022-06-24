@@ -25,7 +25,7 @@ struct TabBarButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .if(appState.selectedTab == type, transform: {
-                    $0.foregroundColor(Color.red)
+                    $0.foregroundColor(type == .star ? Color.yellow : Color.red)
                 })
                 .foregroundColor(Color.gray.opacity(0.5))
         })
