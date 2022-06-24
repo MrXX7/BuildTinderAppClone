@@ -15,24 +15,27 @@ enum TabBarButtonType: String {
 }
 
 struct TabBarButtonView: View {
+    
     var type: TabBarButtonType
-    var action: () -> Void
+    @EnvironmentObject var appState: AppStateManager
     
     var body: some View {
-        Button(action: { action() }, label: {
-            Image(systemName: "flame.fill")
+        Button (action: { appState.selectedTab = type }, label: {
+            Image(systemName: type.rawValue)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .if(appState.selectedTab == type, transform: {
+                    $0.foregroundColor(Color.red)
+                })
                 .foregroundColor(Color.gray.opacity(0.5))
         })
+        .frame(height: 32)
     }
 }
 
 
 struct TabBarButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarButtonView(type: .profile) {
-            Text("Test")
-        }
+        TabBarButtonView(type: .profile)
     }
 }
