@@ -40,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0ABBBE28661B7800736753 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD95019A28649ECC004F7836 /* MainView.swift */,
+				AD95019C2864A047004F7836 /* TabBarButtonView.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		AD95017E28649BD7004F7836 = {
 			isa = PBXGroup;
 			children = (
@@ -59,11 +68,10 @@
 		AD95018928649BD7004F7836 /* BuildTinderApp */ = {
 			isa = PBXGroup;
 			children = (
-				AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */,
-				AD95019A28649ECC004F7836 /* MainView.swift */,
 				AD2EC4202865E18B00E951B3 /* AppStateManager.swift */,
-				AD95019C2864A047004F7836 /* TabBarButtonView.swift */,
 				AD95018C28649BD7004F7836 /* ContentView.swift */,
+				AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */,
+				AD0ABBBE28661B7800736753 /* MainTabBar */,
 				AD95018E28649BD8004F7836 /* Assets.xcassets */,
 				AD95019028649BD8004F7836 /* Preview Content */,
 				AD2EC4222865E45A00E951B3 /* Extensions.swift */,

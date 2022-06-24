@@ -14,13 +14,17 @@ struct MainView: View {
     func correctViewForState() -> some View {
         switch appState.selectedTab {
         case .fire:
-          return Text("Fire")
+            let view = Text("Fire")
+            return AnyView(view)
         case .star:
-          return Text("Star")
+            let view = Text("Star")
+            return AnyView(view)
         case .profile:
-           return Text("Profile")
+           let view = Text("Profile")
+            return AnyView(view)
         case .message:
-           return Text("Message")
+           let view = Text("Message")
+            return AnyView(view)
         }
     }
     
@@ -43,10 +47,12 @@ struct MainView: View {
                     Spacer()
                 }
                 .frame(height: 100)
+                .padding(.top, 30)
                 correctViewForState()
                 
                 Spacer()
             }
+            .edgesIgnoringSafeArea(.vertical)
         }
     }
 }
