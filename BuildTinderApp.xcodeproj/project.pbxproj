@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ABBBF286666E900736753 /* ProfileView.swift */; };
+		AD0ABBC328666A0600736753 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ABBC228666A0600736753 /* RoundedImage.swift */; };
 		AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4202865E18B00E951B3 /* AppStateManager.swift */; };
 		AD2EC4232865E45A00E951B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4222865E45A00E951B3 /* Extensions.swift */; };
 		AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0ABBBF286666E900736753 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AD0ABBC228666A0600736753 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		AD2EC4202865E18B00E951B3 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		AD2EC4222865E45A00E951B3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD95018728649BD7004F7836 /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,14 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
+		AD0ABBC12866671300736753 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD0ABBBF286666E900736753 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		AD95017E28649BD7004F7836 = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +84,11 @@
 				AD95018C28649BD7004F7836 /* ContentView.swift */,
 				AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */,
 				AD0ABBBE28661B7800736753 /* MainTabBar */,
+				AD0ABBC12866671300736753 /* Profile */,
 				AD95018E28649BD8004F7836 /* Assets.xcassets */,
 				AD95019028649BD8004F7836 /* Preview Content */,
 				AD2EC4222865E45A00E951B3 /* Extensions.swift */,
+				AD0ABBC228666A0600736753 /* RoundedImage.swift */,
 			);
 			path = BuildTinderApp;
 			sourceTree = "<group>";
@@ -158,10 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD95019D2864A047004F7836 /* TabBarButtonView.swift in Sources */,
+				AD0ABBC328666A0600736753 /* RoundedImage.swift in Sources */,
 				AD2EC4232865E45A00E951B3 /* Extensions.swift in Sources */,
 				AD95018D28649BD7004F7836 /* ContentView.swift in Sources */,
 				AD95019B28649ECC004F7836 /* MainView.swift in Sources */,
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
+				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,
 				AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
