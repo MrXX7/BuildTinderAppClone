@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ABBBF286666E900736753 /* ProfileView.swift */; };
 		AD0ABBC328666A0600736753 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0ABBC228666A0600736753 /* RoundedImage.swift */; };
+		AD0ABBC628666AB100736753 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD0ABBC528666AB100736753 /* Kingfisher */; };
 		AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4202865E18B00E951B3 /* AppStateManager.swift */; };
 		AD2EC4232865E45A00E951B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4222865E45A00E951B3 /* Extensions.swift */; };
 		AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */; };
@@ -38,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0ABBC628666AB100736753 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,9 @@
 			dependencies = (
 			);
 			name = BuildTinderApp;
+			packageProductDependencies = (
+				AD0ABBC528666AB100736753 /* Kingfisher */,
+			);
 			productName = BuildTinderApp;
 			productReference = AD95018728649BD7004F7836 /* BuildTinderApp.app */;
 			productType = "com.apple.product-type.application";
@@ -145,6 +150,9 @@
 				Base,
 			);
 			mainGroup = AD95017E28649BD7004F7836;
+			packageReferences = (
+				AD0ABBC428666AB100736753 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AD95018828649BD7004F7836 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD0ABBC428666AB100736753 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD0ABBC528666AB100736753 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD0ABBC428666AB100736753 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD95017F28649BD7004F7836 /* Project object */;
 }
