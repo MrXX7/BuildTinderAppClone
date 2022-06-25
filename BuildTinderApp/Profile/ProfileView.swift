@@ -28,15 +28,18 @@ struct ProfileView: View {
         }
             Spacer().frame(height: 18)
             
-            Text("Nikita, 25")
-                .foregroundColor(.textTitle)
+//            Name + Job Title
+            Group {
+                Text("Nikita, 25")
+                    .foregroundColor(.textTitle)
                 .font(.system(size: 26, weight: .medium))
             
-            Spacer().frame(height: 6)
+            Spacer().frame(height: 8)
+                
             Text("Software Engineer")
             
             Spacer().frame(height: 22)
-            
+            }
             HStack(alignment: .top) {
                 
                 Spacer()
@@ -109,8 +112,16 @@ struct ProfileView: View {
             .background(.pink)
             .cornerRadius(12)
             .padding(.horizontal, 8)
-            Spacer()
+            
+            ZStack {
+                Color.gray.opacity(0.15)
+                ProfileSwipePromo{
+                    //
+                }
+            }
+            .padding(.top, 18)
         }
+        .foregroundColor(Color.black.opacity(0.75))
     }
 }
 

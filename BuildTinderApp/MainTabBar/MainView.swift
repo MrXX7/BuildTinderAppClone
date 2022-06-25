@@ -19,11 +19,11 @@ struct MainView: View {
         case .star:
             let view = Text("Star")
             return AnyView(view)
-        case .profile:
-           let view = Text("Profile")
-            return AnyView(view)
         case .message:
            let view = Text("Message")
+            return AnyView(view)
+        case .profile:
+           let view = ProfileView()
             return AnyView(view)
         }
     }
