@@ -20,6 +20,9 @@
 		AD95019B28649ECC004F7836 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95019A28649ECC004F7836 /* MainView.swift */; };
 		AD95019D2864A047004F7836 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95019C2864A047004F7836 /* TabBarButtonView.swift */; };
 		AD9E86E628688F7E00058074 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E86E528688F7E00058074 /* Message.swift */; };
+		ADA3FC12286893D5006A2417 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC11286893D5006A2417 /* Person.swift */; };
+		ADA3FC1428689676006A2417 /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC1328689676006A2417 /* MessagePreview.swift */; };
+		ADA3FC162868977C006A2417 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC152868977C006A2417 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		AD95019A28649ECC004F7836 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AD95019C2864A047004F7836 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		AD9E86E528688F7E00058074 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		ADA3FC11286893D5006A2417 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ADA3FC1328689676006A2417 /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
+		ADA3FC152868977C006A2417 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +99,11 @@
 				AD0ABBBE28661B7800736753 /* MainTabBar */,
 				AD0ABBC12866671300736753 /* Profile */,
 				AD95018E28649BD8004F7836 /* Assets.xcassets */,
+				ADA3FC172868978E006A2417 /* Messages */,
+				AD9E86E828688FAC00058074 /* Model */,
 				AD95019028649BD8004F7836 /* Preview Content */,
 				AD2EC4222865E45A00E951B3 /* Extensions.swift */,
 				AD9E86E728688F9600058074 /* HelperView */,
-				AD9E86E828688FAC00058074 /* Model */,
 			);
 			path = BuildTinderApp;
 			sourceTree = "<group>";
@@ -121,8 +128,18 @@
 			isa = PBXGroup;
 			children = (
 				AD9E86E528688F7E00058074 /* Message.swift */,
+				ADA3FC11286893D5006A2417 /* Person.swift */,
+				ADA3FC1328689676006A2417 /* MessagePreview.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ADA3FC172868978E006A2417 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3FC152868977C006A2417 /* MessageView.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,12 +222,15 @@
 				AD0ABBC328666A0600736753 /* RoundedImage.swift in Sources */,
 				AD2EC4232865E45A00E951B3 /* Extensions.swift in Sources */,
 				AD95018D28649BD7004F7836 /* ContentView.swift in Sources */,
+				ADA3FC12286893D5006A2417 /* Person.swift in Sources */,
+				ADA3FC162868977C006A2417 /* MessageView.swift in Sources */,
 				AD7954A8286703F900DF4C54 /* ProfileSwipePromo.swift in Sources */,
 				AD95019B28649ECC004F7836 /* MainView.swift in Sources */,
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
 				AD9E86E628688F7E00058074 /* Message.swift in Sources */,
 				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,
 				AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */,
+				ADA3FC1428689676006A2417 /* MessagePreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
