@@ -18,7 +18,14 @@ struct ChatView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.vertical, showsIndicators: false, content: {
+            LazyVStack {
+                ForEach(chatMng.messages.indices, id: \.self) { index in
+                    let msg = chatMng.messages[index]
+                    MessageView(message: msg)
+                }
+            }
+        })
     }
 }
 
