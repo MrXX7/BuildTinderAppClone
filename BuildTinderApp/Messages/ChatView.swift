@@ -62,6 +62,7 @@ struct ChatView: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        
     }
     
     func sendMessage() {
