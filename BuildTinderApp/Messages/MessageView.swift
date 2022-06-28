@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessageView: View {
-    var message = Message
+    var message: Message
     
     var body: some View {
         HStack {

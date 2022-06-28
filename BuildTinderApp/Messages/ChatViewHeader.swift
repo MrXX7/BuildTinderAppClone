@@ -25,9 +25,9 @@ struct ChatViewHeader: View {
                         .font(.system(size: 28, weight: .semibold))
                 })
                 Spacer()
-                VStack (spacing: 0){
+                VStack (spacing: 6){
                     RoundedImage(url: imageURL)
-                        .frame(height: 80)
+                        .frame(height: 40)
                     Text(name)
                         .foregroundColor(Color.textSecondary)
                     
@@ -39,6 +39,8 @@ struct ChatViewHeader: View {
                         .font(.system(size: 20, weight: .bold))
                 })
             }
+            .padding(.horizontal, 22)
+            .padding(.bottom, 10)
         }
         .frame(height: 50)
     }

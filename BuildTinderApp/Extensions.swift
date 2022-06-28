@@ -25,6 +25,6 @@ extension Color {
     static let textPrimary = Color.gray.opacity(0.9)
     static let textSecondary = Color.gray.opacity(0.6)
     static let textTitle = Color.black.opacity(0.8)
-    static let defaultBackgroud = Color(.systemGray6)
-        .opacity(0.35)
+    static let defaultBackgroud = Color(.systemGray6).opacity(0.35)
+    static let textfieldBG = Color(.systemGray6)
 }
