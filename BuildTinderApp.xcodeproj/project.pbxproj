@@ -12,6 +12,7 @@
 		AD0ABBC628666AB100736753 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD0ABBC528666AB100736753 /* Kingfisher */; };
 		AD0E3216286CD81B001AD9CC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3215286CD81B001AD9CC /* UserManager.swift */; };
 		AD0E3218286CD87A001AD9CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E3217286CD87A001AD9CC /* User.swift */; };
+		AD0E321B286CDA82001AD9CC /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0E321A286CDA82001AD9CC /* LikesView.swift */; };
 		AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4202865E18B00E951B3 /* AppStateManager.swift */; };
 		AD2EC4232865E45A00E951B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2EC4222865E45A00E951B3 /* Extensions.swift */; };
 		AD5D580D286C516D008DD98F /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D580C286C516D008DD98F /* MessageListView.swift */; };
@@ -38,6 +39,7 @@
 		AD0ABBC228666A0600736753 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		AD0E3215286CD81B001AD9CC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		AD0E3217286CD87A001AD9CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD0E321A286CDA82001AD9CC /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
 		AD2EC4202865E18B00E951B3 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		AD2EC4222865E45A00E951B3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AD5D580C286C516D008DD98F /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		AD0E3219286CDA70001AD9CC /* MatchesView */ = {
+			isa = PBXGroup;
+			children = (
+				AD0E321A286CDA82001AD9CC /* LikesView.swift */,
+			);
+			path = MatchesView;
+			sourceTree = "<group>";
+		};
 		AD95017E28649BD7004F7836 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		AD95018928649BD7004F7836 /* BuildTinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD0E3219286CDA70001AD9CC /* MatchesView */,
 				AD2EC4202865E18B00E951B3 /* AppStateManager.swift */,
 				AD95018C28649BD7004F7836 /* ContentView.swift */,
 				AD0E3215286CD81B001AD9CC /* UserManager.swift */,
@@ -259,6 +270,7 @@
 				AD9E86E628688F7E00058074 /* Message.swift in Sources */,
 				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,
 				AD64A7152869DD99007F841D /* ChatManager.swift in Sources */,
+				AD0E321B286CDA82001AD9CC /* LikesView.swift in Sources */,
 				AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */,
 				AD0E3216286CD81B001AD9CC /* UserManager.swift in Sources */,
 				ADA3FC1428689676006A2417 /* MessagePreview.swift in Sources */,
