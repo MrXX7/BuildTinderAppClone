@@ -6,15 +6,32 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct MessageRowView: View {
+    
+    var preview: MessagePreview
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            RoundedImage(url: preview.person.imageURLS.first)
+                .frame(height: 90)
+        VStack {
+            Text(preview.person.name)
+                .font(.system(size: 21, weight: .semibold))
+            
+            Text(preview.lastMessage)
+                .foregroundColor(.textPrimary)
+        }
+            Spacer()
+            
+        }
     }
 }
 
 struct MessageRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageRowView()
+        MessageRowView(preview: MessagePreview.example)
     }
 }

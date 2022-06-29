@@ -15,6 +15,7 @@ struct MessageListView: View {
     @State private var isEditing: Bool = true
     
     var body: some View {
+        ScrollView {
         VStack {
             HStack {
                 TextField("Search Matches", text: $searchText)
@@ -51,8 +52,21 @@ struct MessageListView: View {
                 .animation(.easeIn(duration: 0.25))
                 }
             }
+            
+            VStack {
+                ForEach(vm.messagePreviews, id: \.self) { preview in
+                    NavigationLink(
+                        destination: ChatView(person: preview.person),
+                        label: {
+                            MessageRowView(preview: preview)
+                        })
+                    .buttonStyle(PlainButtonStyle())
+                }
+            }
             Spacer()
+            }
         }
+        .modifier(HideNavigationView())
     }
 }
 
