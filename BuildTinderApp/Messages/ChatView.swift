@@ -85,8 +85,8 @@ struct ChatView: View {
         
     }
     func sendMessage() {
-        chatMng.sendMessage(Message(content: typingMessage))
-        typingMessage = ""
+//        chatMng.sendMessage(Message(content: typingMessage))
+//        typingMessage = ""
     }
     
     func scrollToBottom() {
