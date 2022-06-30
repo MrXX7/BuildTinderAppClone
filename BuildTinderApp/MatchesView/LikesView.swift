@@ -27,13 +27,17 @@ struct LikesView: View {
                 .padding(.vertical, 24)
             }
             LazyVGrid(
-                columns: [GridItem(.flexible()), GridItem(.flexible())]
+                columns: [GridItem(.flexible()), GridItem(.flexible())],
                 alignment: .center,
                 spacing: nil,
                 pinnedViews: [],
                 content: {
             Text("Placeholder")
             Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
         })
         })
     }
