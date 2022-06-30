@@ -19,7 +19,7 @@ struct PersonSquare: View {
                 KFImage(person.imageURLS.first)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: geo.size.width, height: 240)
+                    .frame(width: geo.size.width, height: geo.size.height)
                 .if(blur) {
                     $0.blur(radius: 25)
                 }
@@ -40,6 +40,6 @@ struct PersonSquare: View {
 struct PersonSquare_Previews: PreviewProvider {
     static var previews: some View {
         PersonSquare(person: Person.example, blur: true)
-            .frame(width: 125)
+            .frame(width: 125, height: 125)
     }
 }
