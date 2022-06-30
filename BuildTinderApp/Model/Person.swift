@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person: Hashable {
+struct Person: Hashable, Identifiable {
+    let id = UUID().uuidString
     var name: String
     var imageURLS: [URL]
     var bio: String
@@ -28,4 +29,25 @@ extension Person {
         bio: "I really love dogs",
         age: 25
         )
+    static let examples: [Person] = [
+        Person.example,
+        Person.example2,
+        Person(
+            name: "Olivia",
+            imageURLS: [URL(string: "https://picsum.photos/400/302")!],
+            bio: "I love hiking",
+            age: 30
+            ),
+        Person(
+            name: "Sophia",
+            imageURLS: [URL(string: "https://picsum.photos/400/303")!],
+            bio: "I m really broing",
+            age: 28
+            ),
+        Person(
+            name: "Mia",
+            imageURLS: [URL(string: "https://picsum.photos/400/304")!],
+            bio: "I like to skateboard",
+            age: 22)
+    ]
 }
