@@ -1,13 +1,13 @@
 //
-//  LikesView.swift
+//  TopPicksView.swift
 //  BuildTinderApp
 //
-//  Created by Oncu Ohancan on 29.06.2022.
+//  Created by Oncu Ohancan on 1.07.2022.
 //
 
 import SwiftUI
 
-struct LikesView: View {
+struct TopPicksView: View {
     @EnvironmentObject var userMng: UserManager
     @EnvironmentObject var appState: AppStateManager
     
@@ -19,7 +19,7 @@ struct LikesView: View {
         ScrollView(.vertical, showsIndicators: false, content: {
             
             if !user.goldSubscriber {
-            Text("Upgrade to Gold see people already liked you")
+            Text("Upgrade to Tinder Gold for more Top Picks")
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
                 .foregroundColor(.textTitle)
@@ -53,9 +53,9 @@ struct LikesView: View {
                 }
 }
 
-struct LikesView_Previews: PreviewProvider {
+struct TopPicksView_Previews: PreviewProvider {
     static var previews: some View {
-        LikesView()
+        TopPicksView()
             .environmentObject(UserManager())
             .environmentObject(AppStateManager())
     }
