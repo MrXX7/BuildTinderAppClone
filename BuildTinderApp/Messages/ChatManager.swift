@@ -2,7 +2,7 @@
 //  ChatManager.swift
 //  BuildTinderApp
 //
-//  Created by Oncu Ohancan on 27.06.2022.
+//  Created by Oncu Ohancan on 3.07.2022.
 //
 
 import Foundation

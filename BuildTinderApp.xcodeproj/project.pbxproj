@@ -20,12 +20,12 @@
 		AD5D580D286C516D008DD98F /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D580C286C516D008DD98F /* MessageListView.swift */; };
 		AD5D580F286C51CF008DD98F /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D580E286C51CF008DD98F /* MessageListVM.swift */; };
 		AD5DDA28286C820A00477914 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDA27286C820A00477914 /* MessageRowView.swift */; };
-		AD64A7152869DD99007F841D /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64A7142869DD99007F841D /* ChatManager.swift */; };
 		AD64A7172869DE9B007F841D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64A7162869DE9B007F841D /* ChatView.swift */; };
 		AD782B40286CFCEB000044CB /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD782B3F286CFCEB000044CB /* PersonSquare.swift */; };
 		AD78E985286B1F49002DCA6A /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78E984286B1F49002DCA6A /* ChatViewHeader.swift */; };
 		AD7954A8286703F900DF4C54 /* ProfileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7954A7286703F900DF4C54 /* ProfileSwipePromo.swift */; };
 		AD86A0242871AEA5003AC461 /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD86A0232871AEA5003AC461 /* PurchasePopup.swift */; };
+		AD86A0272871B1AF003AC461 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD86A0262871B1AF003AC461 /* ChatManager.swift */; };
 		AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */; };
 		AD95018D28649BD7004F7836 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95018C28649BD7004F7836 /* ContentView.swift */; };
 		AD95018F28649BD8004F7836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD95018E28649BD8004F7836 /* Assets.xcassets */; };
@@ -51,12 +51,12 @@
 		AD5D580C286C516D008DD98F /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		AD5D580E286C51CF008DD98F /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		AD5DDA27286C820A00477914 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
-		AD64A7142869DD99007F841D /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		AD64A7162869DE9B007F841D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		AD782B3F286CFCEB000044CB /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
 		AD78E984286B1F49002DCA6A /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
 		AD7954A7286703F900DF4C54 /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
 		AD86A0232871AEA5003AC461 /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
+		AD86A0262871B1AF003AC461 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		AD95018728649BD7004F7836 /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD95018A28649BD7004F7836 /* BuildTinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTinderAppApp.swift; sourceTree = "<group>"; };
 		AD95018C28649BD7004F7836 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -187,12 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				ADA3FC152868977C006A2417 /* MessageView.swift */,
-				AD64A7142869DD99007F841D /* ChatManager.swift */,
 				AD64A7162869DE9B007F841D /* ChatView.swift */,
 				AD78E984286B1F49002DCA6A /* ChatViewHeader.swift */,
 				AD5D580C286C516D008DD98F /* MessageListView.swift */,
 				AD5D580E286C51CF008DD98F /* MessageListVM.swift */,
 				AD5DDA27286C820A00477914 /* MessageRowView.swift */,
+				AD86A0262871B1AF003AC461 /* ChatManager.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -274,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD95019D2864A047004F7836 /* TabBarButtonView.swift in Sources */,
+				AD86A0272871B1AF003AC461 /* ChatManager.swift in Sources */,
 				AD5D580D286C516D008DD98F /* MessageListView.swift in Sources */,
 				AD0ABBC328666A0600736753 /* RoundedImage.swift in Sources */,
 				AD782B40286CFCEB000044CB /* PersonSquare.swift in Sources */,
@@ -292,7 +293,6 @@
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
 				AD9E86E628688F7E00058074 /* Message.swift in Sources */,
 				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,
-				AD64A7152869DD99007F841D /* ChatManager.swift in Sources */,
 				AD0E321B286CDA82001AD9CC /* LikesView.swift in Sources */,
 				AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */,
 				AD0E3216286CD81B001AD9CC /* UserManager.swift in Sources */,
