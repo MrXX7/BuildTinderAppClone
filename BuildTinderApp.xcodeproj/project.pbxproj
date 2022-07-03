@@ -128,6 +128,7 @@
 		AD95018928649BD7004F7836 /* BuildTinderApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADA3FC172868978E006A2417 /* Messages */,
 				AD0E3219286CDA70001AD9CC /* MatchesView */,
 				AD2EC4202865E18B00E951B3 /* AppStateManager.swift */,
 				AD95018C28649BD7004F7836 /* ContentView.swift */,
@@ -136,7 +137,6 @@
 				AD0ABBBE28661B7800736753 /* MainTabBar */,
 				AD0ABBC12866671300736753 /* Profile */,
 				AD95018E28649BD8004F7836 /* Assets.xcassets */,
-				ADA3FC172868978E006A2417 /* Messages */,
 				AD9E86E828688FAC00058074 /* Model */,
 				AD95019028649BD8004F7836 /* Preview Content */,
 				AD2EC4222865E45A00E951B3 /* Extensions.swift */,

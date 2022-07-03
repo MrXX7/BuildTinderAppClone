@@ -14,7 +14,7 @@ struct User {
     var jobTitle: String
     
     var goldSubscriber: Bool = false
-    var profileTip: String =
+    var profileTip: String = ""
     
     var imageURLS: [URL] = []
 }
