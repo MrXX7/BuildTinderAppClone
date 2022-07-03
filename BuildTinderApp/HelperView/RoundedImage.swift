@@ -10,6 +10,7 @@ import Kingfisher
 
 struct RoundedImage: View {
     var url: URL?
+    
     var body: some View {
         KFImage(url)
             .resizable()

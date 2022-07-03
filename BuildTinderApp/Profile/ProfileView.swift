@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @EnvironmentObject var userMng: UserManager
+    @EnvironmentObject var appState: AppStateManager
+    
+    var user: User {
+        return userMng.currentUser
+    }
+    
     var body: some View {
         VStack(spacing:0) {
             ZStack(alignment: .topTrailing) {
-                RoundedImage(url: URL(string: "https://picsum.photos/400"))
-                    .frame(height: 200)
+                RoundedImage(url: user.imageURLS.first)
+                    .frame(height: 175)
                 
             Button(action: {}, label: {
                 Image(systemName: "pencil")
@@ -30,13 +38,13 @@ struct ProfileView: View {
             
 //            Name + Job Title
             Group {
-                Text("Nikita, 25")
+                Text("\(user.name), \(user.age)")
                     .foregroundColor(.textTitle)
                 .font(.system(size: 26, weight: .medium))
             
             Spacer().frame(height: 8)
                 
-            Text("Software Engineer")
+            Text("\(user.jobTitle)")
             
             Spacer().frame(height: 22)
             }
@@ -93,34 +101,39 @@ struct ProfileView: View {
             
             Spacer().frame(height: 13)
             
-            HStack {
-                Text("Photo Tip: Make waves with a beach photo and get more likes")
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(3)
-                    .foregroundColor(.white)
-                    .font(.system(size: 14))
-                Button(action: {}, label: {
-                    Image(systemName: "plus")
-                        .font(.system(size: 14, weight: .heavy))
-                        .foregroundColor(.pink)
-                        .padding(6)
-                })
-                .background(.white)
-                .clipShape(Circle())
-            }
-            .padding()
-            .background(.pink)
-            .cornerRadius(12)
+            if.!user.profileTip.isEmpty {
+                HStack {
+                    Text("\(user.profileTip)")
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(3)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14))
+                    Button(action: {}, label: {
+                        Image(systemName: "plus")
+                            .font(.system(size: 14, weight: .heavy))
+                            .foregroundColor(.pink)
+                            .padding(6)
+                    })
+                    .background(.white)
+                    .clipShape(Circle())
+                }
+                .padding()
+                .background(.pink)
+                .cornerRadius(12)
             .padding(.horizontal, 8)
+            }
             
+            if !user.goldSubscriber {
             ZStack {
                 Color.gray.opacity(0.15)
                 ProfileSwipePromo{
-                    //
+                    appState.showPurchasePopup()
                 }
             }
             .padding(.top, 18)
         }
+            Spacer()
+    }
         .foregroundColor(Color.black.opacity(0.75))
     }
 }
@@ -129,5 +142,7 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
             .background(Color.defaultBackgroud)
+            .environmentObject(UserManager())
+            .environmentObject(AppStateManager())
     }
 }
