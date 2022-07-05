@@ -56,10 +56,22 @@ struct PurchasePopup: View {
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
                         .foregroundColor(.white)
             )
-                VStack {
+                Spacer()
+                VStack(spacing: 4) {
                     Text("Recurring billing, cancel anytime.")
+                        .foregroundColor(.white)
+                        .font(.system(size: 14, weight: .semibold))
+                        Text("This is a bunch of example....")
+                        .foregroundColor(.white.opacity(0.5))
+                        .font(.system(size: 14, weight: .semibold))
+                        .multilineTextAlignment(.center)
+                    
                 }
+                .padding(.bottom, 20)
+                .padding(.horizontal, 4)
+                Spacer()
             }
+            .background(Color.black.edgesIgnoringSafeArea(.all))
         }
     }
 }
