@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PurchasePopup: View {
     
+    @Binding var isVisible: Bool
+    
     let screen = UIScreen.main.bounds
     
     func processPayment() {
@@ -18,6 +20,8 @@ struct PurchasePopup: View {
     var body: some View {
         GeometryReader { geo in
             VStack {
+                Spacer().frame(height: 40)
+                
                 VStack {
                     Text("Get Tinder Gold")
                     foregroundColor(.yellow)
@@ -42,16 +46,15 @@ struct PurchasePopup: View {
                     .padding(.horizontal, 24)
                     .padding(.top, 12)
                     
-                    Button(action: {}, label: {
+                    Button(action: { isVisible = false }, label: {
                         Text("NO THANKS")
                             .foregroundColor(.textPrimary)
                             .font(.system(size: 20, weight: .heavy))
                     })
                     .padding(.vertical, 18)
-                    
-                    Spacer()
                 }
                 .frame(width: geo.size.width)
+                .padding(.vertical, 20)
                 .background(
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
                         .foregroundColor(.white)
@@ -73,11 +76,14 @@ struct PurchasePopup: View {
             }
             .background(Color.black.edgesIgnoringSafeArea(.all))
         }
+        .frame(height: screen.height)
     }
 }
 
 struct PurchasePopup_Previews: PreviewProvider {
+    @State private var isVisible: Bool = false
+    
     static var previews: some View {
-        PurchasePopup()
+        PurchasePopup(isVisible: .constant(true))
     }
 }
