@@ -21,6 +21,7 @@
 		AD5D580F286C51CF008DD98F /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5D580E286C51CF008DD98F /* MessageListVM.swift */; };
 		AD5DDA28286C820A00477914 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5DDA27286C820A00477914 /* MessageRowView.swift */; };
 		AD64A7172869DE9B007F841D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64A7162869DE9B007F841D /* ChatView.swift */; };
+		AD6A71C328755EBC005BD908 /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A71C228755EBC005BD908 /* PurchaseSwipePromo.swift */; };
 		AD782B40286CFCEB000044CB /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD782B3F286CFCEB000044CB /* PersonSquare.swift */; };
 		AD78E985286B1F49002DCA6A /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78E984286B1F49002DCA6A /* ChatViewHeader.swift */; };
 		AD7954A8286703F900DF4C54 /* ProfileSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7954A7286703F900DF4C54 /* ProfileSwipePromo.swift */; };
@@ -52,6 +53,7 @@
 		AD5D580E286C51CF008DD98F /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		AD5DDA27286C820A00477914 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		AD64A7162869DE9B007F841D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		AD6A71C228755EBC005BD908 /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
 		AD782B3F286CFCEB000044CB /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
 		AD78E984286B1F49002DCA6A /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
 		AD7954A7286703F900DF4C54 /* ProfileSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSwipePromo.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				AD86A0232871AEA5003AC461 /* PurchasePopup.swift */,
+				AD6A71C228755EBC005BD908 /* PurchaseSwipePromo.swift */,
 			);
 			path = Popups;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				AD95019B28649ECC004F7836 /* MainView.swift in Sources */,
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
 				AD9E86E628688F7E00058074 /* Message.swift in Sources */,
+				AD6A71C328755EBC005BD908 /* PurchaseSwipePromo.swift in Sources */,
 				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,
 				AD0E321B286CDA82001AD9CC /* LikesView.swift in Sources */,
 				AD2EC4212865E18B00E951B3 /* AppStateManager.swift in Sources */,
