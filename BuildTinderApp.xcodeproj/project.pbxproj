@@ -37,6 +37,7 @@
 		ADA3FC12286893D5006A2417 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC11286893D5006A2417 /* Person.swift */; };
 		ADA3FC1428689676006A2417 /* MessagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC1328689676006A2417 /* MessagePreview.swift */; };
 		ADA3FC162868977C006A2417 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA3FC152868977C006A2417 /* MessageView.swift */; };
+		ADAB3F42287569C30053C9F4 /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB3F41287569C30053C9F4 /* PurchaseOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		ADA3FC11286893D5006A2417 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ADA3FC1328689676006A2417 /* MessagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePreview.swift; sourceTree = "<group>"; };
 		ADA3FC152868977C006A2417 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		ADAB3F41287569C30053C9F4 /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +115,20 @@
 			path = MatchesView;
 			sourceTree = "<group>";
 		};
-		AD86A0252871AEAA003AC461 /* Popups */ = {
+		AD6A71C428756228005BD908 /* Purchase */ = {
 			isa = PBXGroup;
 			children = (
 				AD86A0232871AEA5003AC461 /* PurchasePopup.swift */,
 				AD6A71C228755EBC005BD908 /* PurchaseSwipePromo.swift */,
+				ADAB3F41287569C30053C9F4 /* PurchaseOptionView.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		AD86A0252871AEAA003AC461 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A71C428756228005BD908 /* Purchase */,
 			);
 			path = Popups;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 				AD64A7172869DE9B007F841D /* ChatView.swift in Sources */,
 				AD95019B28649ECC004F7836 /* MainView.swift in Sources */,
 				AD95018B28649BD7004F7836 /* BuildTinderAppApp.swift in Sources */,
+				ADAB3F42287569C30053C9F4 /* PurchaseOptionView.swift in Sources */,
 				AD9E86E628688F7E00058074 /* Message.swift in Sources */,
 				AD6A71C328755EBC005BD908 /* PurchaseSwipePromo.swift in Sources */,
 				AD0ABBC0286666E900736753 /* ProfileView.swift in Sources */,

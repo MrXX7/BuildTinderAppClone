@@ -27,10 +27,10 @@ struct PurchasePopup: View {
                     foregroundColor(.yellow)
                         .font(.system(size: 24, weight: .bold))
                     
-                    Text("PurchaseSwipePromo")
+                    PurchaseSwipePromo()
                         .frame(height: geo.size.height / 3)
-                        .background(.gray)
-                        
+                        .padding(.top, -30)
+                    
                     Text("3 purchase Options")
                     
                     Button(action: { processPayment() }, label: {
