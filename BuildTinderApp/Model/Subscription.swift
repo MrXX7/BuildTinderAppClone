@@ -30,4 +30,16 @@ extension Subscription {
         totalCost: 89.99,
         savePercent: 50,
         tagLine: .bestValue)
-        }
+    
+    static let example2 = Subscription(
+        month: 3,
+        monthlyCost: 20.00,
+        totalCost: 59.99,
+        savePercent: 3,
+        tagLine: .mostPopular)
+    static let example3 = Subscription(
+        month: 1,
+        monthlyCost: 29.99,
+        totalCost: 29.99
+    )
+}
